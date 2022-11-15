@@ -6,8 +6,7 @@ git commit -m 'Temp rebase commit'
 git checkout submodule
 git rebase temp
 git checkout --theirs *
-git add *
-git rm --cached autoupdate.sh
+git add -u *
 git rebase --continue
 git checkout -f dev
 git branch -D temp
